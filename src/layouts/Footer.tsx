@@ -13,12 +13,14 @@ import Link from "next/link";
 import { type TransitionEvent, useState } from "react";
 
 import { departments } from "@/features/homepage/data/departments";
+import { BPS_PATH } from "@/lib/site";
 
 const pages = [
   { label: "Blog", href: "/blog" },
   { label: "Event", href: "/event/fteic" },
   { label: "Kabinet", href: "/#kabinet" },
   { label: "Galeri", href: "/galeri" },
+  { label: "BPS", href: BPS_PATH },
 ];
 
 const socialLinks = [
@@ -215,16 +217,19 @@ export default function Footer() {
                   Halaman
                 </h3>
                 <ul className="space-y-2 text-white/70">
-                  {pages.map((item) => (
-                    <li key={item.label}>
-                      <Link
-                        href={item.href}
-                        className="relative inline-block transition-colors hover:text-white after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-200 hover:after:w-full"
-                      >
-                        {item.label}
-                      </Link>
-                    </li>
-                  ))}
+                  {pages.map((item) => {
+                    const Tag = item.href === BPS_PATH ? "a" : Link;
+                    return (
+                      <li key={item.label}>
+                        <Tag
+                          href={item.href}
+                          className="relative inline-block transition-colors hover:text-white after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-200 hover:after:w-full"
+                        >
+                          {item.label}
+                        </Tag>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
 

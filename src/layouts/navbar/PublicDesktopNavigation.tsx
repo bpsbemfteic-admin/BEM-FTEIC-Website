@@ -7,6 +7,7 @@ import { useState } from "react";
 import { EVENT_NAV_ITEMS } from "@/features/event/department";
 import { KABINET_NAV_ITEMS } from "@/features/kabinet/navigation";
 import clsxm from "@/lib/clsxm";
+import { BPS_PATH } from "@/lib/site";
 
 type Menu = "event" | "kabinet";
 
@@ -60,6 +61,9 @@ export function PublicDesktopNavigation({
       <Link href="/galeri" className={itemClass}>
         <span className={underline}>GALERI</span>
       </Link>
+      <a href={BPS_PATH} className={itemClass}>
+        <span className={underline}>BPS</span>
+      </a>
     </nav>
   );
 }

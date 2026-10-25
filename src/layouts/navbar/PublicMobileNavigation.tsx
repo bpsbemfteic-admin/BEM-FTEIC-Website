@@ -7,6 +7,7 @@ import { useState } from "react";
 import { EVENT_NAV_ITEMS } from "@/features/event/department";
 import { KABINET_NAV_ITEMS } from "@/features/kabinet/navigation";
 import clsxm from "@/lib/clsxm";
+import { BPS_PATH } from "@/lib/site";
 
 export function PublicMobileNavigation() {
   const [open, setOpen] = useState(false);
@@ -72,6 +73,9 @@ export function PublicMobileNavigation() {
         <MobileLink href="/galeri" onClick={close}>
           Galeri
         </MobileLink>
+        <MobileLink href={BPS_PATH} onClick={close}>
+          BPS
+        </MobileLink>
       </nav>
     </div>
   );
@@ -86,14 +90,16 @@ function MobileLink({
   onClick: () => void;
   children: React.ReactNode;
 }) {
+  const Tag = href === BPS_PATH ? "a" : Link;
+
   return (
-    <Link
+    <Tag
       href={href}
       onClick={onClick}
       className="flex min-h-11 items-center border-b border-black/20 px-4 py-3 text-sm font-semibold uppercase focus-visible:bg-brand-night focus-visible:text-brand-gold-bright"
     >
       {children}
-    </Link>
+    </Tag>
   );
 }
 

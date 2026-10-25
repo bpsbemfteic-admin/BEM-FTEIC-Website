@@ -1,6 +1,13 @@
 const isStandaloneBuild = process.env.BUILD_STANDALONE === "true";
 const isDevelopment = process.env.NODE_ENV === "development";
 
+// Portal BPS (Next.js terpisah, basePath "/bps") disajikan di bem-fteic.com/bps lewat multi-zone.
+const bpsZoneUrl =
+  process.env.BPS_ZONE_URL ||
+  (isDevelopment
+    ? "http://localhost:3300"
+    : "https://project-lens-keor.vercel.app");
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   ...(isStandaloneBuild ? { output: "standalone" } : {}),
@@ -8,7 +15,8 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: "/(.*)",
+        // /bps dilayani Portal BPS dengan header keamanannya sendiri.
+        source: "/((?!bps(?:/|$)).*)",
         headers: [
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "X-Frame-Options", value: "DENY" },
@@ -35,6 +43,12 @@ const nextConfig = {
           },
         ],
       },
+    ];
+  },
+  async rewrites() {
+    return [
+      { source: "/bps", destination: `${bpsZoneUrl}/bps` },
+      { source: "/bps/:path+", destination: `${bpsZoneUrl}/bps/:path+` },
     ];
   },
 };
