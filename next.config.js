@@ -49,6 +49,17 @@ const nextConfig = {
     return [
       { source: "/bps", destination: `${bpsZoneUrl}/bps` },
       { source: "/bps/:path+", destination: `${bpsZoneUrl}/bps/:path+` },
+      // Opsional: bila web ini dipasang di domain lain (mis. pratinjau di Vercel), API pusat yang hanya
+      // menerima origin bem-fteic.com diakses lewat server ini. Set API_PROXY_TARGET=https://api.bem-fteic.com
+      // dan NEXT_PUBLIC_API_URL_PROD=/api-bem. Tidak aktif di VPS selama env itu tidak diisi.
+      ...(process.env.API_PROXY_TARGET
+        ? [
+            {
+              source: "/api-bem/:path*",
+              destination: `${process.env.API_PROXY_TARGET}/:path*`,
+            },
+          ]
+        : []),
     ];
   },
 };
