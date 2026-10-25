@@ -12,6 +12,8 @@ const bpsZoneUrl =
 const nextConfig = {
   ...(isStandaloneBuild ? { output: "standalone" } : {}),
   poweredByHeader: false,
+  // Hanya di mode pratinjau (proxy API aktif): jangan buang garis miring agar /api-bem/events/ tetap utuh.
+  ...(process.env.API_PROXY_TARGET ? { skipTrailingSlashRedirect: true } : {}),
   async headers() {
     return [
       {
@@ -54,6 +56,11 @@ const nextConfig = {
       // dan NEXT_PUBLIC_API_URL_PROD=/api-bem. Tidak aktif di VPS selama env itu tidak diisi.
       ...(process.env.API_PROXY_TARGET
         ? [
+            // API pusat mewajibkan garis miring di akhir (/events/).
+            {
+              source: "/api-bem/:path*/",
+              destination: `${process.env.API_PROXY_TARGET}/:path*/`,
+            },
             {
               source: "/api-bem/:path*",
               destination: `${process.env.API_PROXY_TARGET}/:path*`,
