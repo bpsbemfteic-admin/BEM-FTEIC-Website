@@ -20,7 +20,7 @@ const marsLyrics = [
 
 export default function AboutSection() {
   return (
-    <section className="bg-brand-night pb-24 pt-6 md:pt-16">
+    <section className="bg-gradient-to-b from-brand-night to-brand-deep pb-24 pt-6 md:pt-16">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 md:grid-cols-2 md:items-center">
         <ScrollReveal delay={40}>
           <div className="group relative h-[280px] w-full overflow-hidden md:h-[360px]">

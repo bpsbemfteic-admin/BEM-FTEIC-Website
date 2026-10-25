@@ -9,7 +9,7 @@ const missionItems = [
 
 export default function VisiMisiSection() {
   return (
-    <section className="bg-[#F3F3F3] py-20">
+    <section className="bg-gradient-to-b from-[#F3F3F3] to-brand-light-blue py-20">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 md:grid-cols-2">
         <ScrollReveal delay={40}>
           <div>

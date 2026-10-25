@@ -5,6 +5,7 @@ import EventSection from "@/features/homepage/components/EventSection";
 import HeroSection from "@/features/homepage/components/HeroSection";
 import HeroToAboutGradient from "@/features/homepage/components/HeroToAboutGradient";
 import LocationSection from "@/features/homepage/components/LocationSection";
+import SectionFade from "@/features/homepage/components/SectionFade";
 import VisiMisiSection from "@/features/homepage/components/VisiMisiSection";
 
 export default function HomePageContent() {
@@ -13,11 +14,17 @@ export default function HomePageContent() {
       <HeroSection />
       <HeroToAboutGradient />
       <AboutSection />
+      <SectionFade className="from-brand-deep to-[#F3F3F3]" />
       <VisiMisiSection />
+      <SectionFade className="from-brand-light-blue to-brand-blue" />
       <BirokrasiSection />
+      <SectionFade className="from-brand-deep to-[#F3F3F3]" />
       <EventSection />
+      <SectionFade className="from-brand-light-blue to-brand-blue" />
       <BlogSection />
+      <SectionFade className="from-brand-deep to-[#F3F3F3]" />
       <LocationSection />
+      <SectionFade className="from-brand-light-blue to-brand-night" />
     </main>
   );
 }

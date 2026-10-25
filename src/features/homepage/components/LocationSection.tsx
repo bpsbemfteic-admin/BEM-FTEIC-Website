@@ -68,9 +68,9 @@ export default function LocationSection() {
   };
 
   return (
-    <section className="bg-[#F3F3F3] py-16">
+    <section className="bg-gradient-to-b from-[#F3F3F3] to-brand-light-blue py-16">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-6 md:grid-cols-[1.25fr_0.9fr]">
-        <div className="relative h-[540px] w-full overflow-hidden border border-[#C7D2FE] bg-[#E6E6E6] md:h-[700px]">
+        <div className="relative h-[540px] w-full overflow-hidden border border-brand-blue/20 bg-[#E6E6E6] md:h-[700px]">
           <img
             src="/images/Homepage_Location-Section_Image.png"
             alt="ITS map"

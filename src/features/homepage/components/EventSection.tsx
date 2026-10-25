@@ -278,7 +278,7 @@ function DepartmentCard({ department }: { department: Department }) {
 
 export default function EventSection() {
   return (
-    <section className="bg-[#F3F3F3] py-20">
+    <section className="bg-gradient-to-b from-[#F3F3F3] to-brand-light-blue py-20">
       <div className="mx-auto max-w-6xl px-6">
         <ScrollReveal delay={40}>
           <h3 className="text-center text-4xl font-extrabold uppercase text-brand-blue md:text-left md:text-5xl">

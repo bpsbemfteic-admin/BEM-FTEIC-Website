@@ -12,7 +12,7 @@ export default function BlogSection() {
   const rest = items.slice(1, 5);
 
   return (
-    <section className="bg-brand-blue pb-36 pt-20 text-white">
+    <section className="bg-gradient-to-b from-brand-blue to-brand-deep pb-36 pt-20 text-white">
       <div className="mx-auto max-w-6xl translate-y-10 px-6">
         <ScrollReveal delay={40}>
           <div className="flex items-center justify-between">

@@ -3,7 +3,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 export default function BirokrasiSection() {
   return (
     <>
-      <section className="flex min-h-[100svh] items-center bg-brand-blue py-16 text-white">
+      <section className="flex min-h-[100svh] items-center bg-gradient-to-b from-brand-blue to-brand-deep py-16 text-white">
         <div className="mx-auto w-full max-w-7xl translate-y-7 px-6">
           <ScrollReveal delay={40}>
             <h3 className="text-center text-4xl font-extrabold uppercase text-brand-gold-bright md:text-5xl">
@@ -42,7 +42,7 @@ export default function BirokrasiSection() {
           </div>
         </div>
       </section>
-      <div aria-hidden="true" className="h-14 bg-brand-blue" />
+      <div aria-hidden="true" className="h-14 bg-brand-deep" />
     </>
   );
 }
