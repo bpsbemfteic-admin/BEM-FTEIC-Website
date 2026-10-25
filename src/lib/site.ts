@@ -32,6 +32,7 @@ export const SITE_URL = resolveSiteUrl(
 // Halaman Kinerja (milik BPS: apresiasi, penilaian, OKR & Project Lens) adalah aplikasi terpisah (zona lain) yang diteruskan lewat rewrites di next.config.js.
 // Tautan ke sana memakai <a> biasa, bukan <Link>, karena berpindah zona butuh muat ulang halaman.
 export const BPS_PATH = "/bps";
+export const JADWAL_PATH = "/bps/jadwal";
 
 export const CANONICAL_HOSTNAME = new URL(PRODUCTION_SITE_URL).hostname;
 export const REDIRECT_HOSTNAMES = new Set(LEGACY_SITE_HOSTNAMES);

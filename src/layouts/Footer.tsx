@@ -13,13 +13,14 @@ import Link from "next/link";
 import { type TransitionEvent, useState } from "react";
 
 import { departments } from "@/features/homepage/data/departments";
-import { BPS_PATH } from "@/lib/site";
+import { BPS_PATH, JADWAL_PATH } from "@/lib/site";
 
 const pages = [
   { label: "Blog", href: "/blog" },
   { label: "Event", href: "/event/fteic" },
   { label: "Kabinet", href: "/#kabinet" },
   { label: "Galeri", href: "/galeri" },
+  { label: "Jadwal", href: JADWAL_PATH },
   { label: "Kinerja", href: BPS_PATH },
 ];
 
@@ -218,7 +219,7 @@ export default function Footer() {
                 </h3>
                 <ul className="space-y-2 text-white/70">
                   {pages.map((item) => {
-                    const Tag = item.href === BPS_PATH ? "a" : Link;
+                    const Tag = item.href.startsWith(BPS_PATH) ? "a" : Link;
                     return (
                       <li key={item.label}>
                         <Tag
