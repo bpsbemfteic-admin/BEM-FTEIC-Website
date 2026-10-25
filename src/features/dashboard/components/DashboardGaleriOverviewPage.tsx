@@ -63,7 +63,7 @@ export default function DashboardGaleriOverviewPage() {
           </div>
           <Link
             href="/dashboard/galeri/create"
-            className="whitespace-nowrap bg-[#2563EB] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700"
+            className="whitespace-nowrap bg-brand-blue px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-brand-deep"
           >
             + Add Photos
           </Link>
@@ -93,7 +93,7 @@ export default function DashboardGaleriOverviewPage() {
                   <div className="flex items-center gap-4">
                     <Link
                       href={`/dashboard/galeri/edit?id=${item.id}`}
-                      className="inline-flex items-center gap-1 text-[#2B53D3]"
+                      className="inline-flex items-center gap-1 text-brand-blue"
                     >
                       <Pencil size={12} />
                       Edit

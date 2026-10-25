@@ -84,7 +84,7 @@ export default function DashboardGaleriForm({
             type="button"
             onClick={submit}
             disabled={saveGallery.isPending}
-            className="min-h-11 bg-[#2563EB] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700 focus-visible:ring-2 focus-visible:ring-blue-900 disabled:cursor-not-allowed disabled:opacity-70"
+            className="min-h-11 bg-brand-blue px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-brand-deep focus-visible:ring-2 focus-visible:ring-blue-900 disabled:cursor-not-allowed disabled:opacity-70"
           >
             {saveGallery.isPending
               ? "Saving..."

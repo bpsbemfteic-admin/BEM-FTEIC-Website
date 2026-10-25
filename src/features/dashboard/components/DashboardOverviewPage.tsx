@@ -95,19 +95,19 @@ export default function DashboardOverviewPage() {
           <div className="flex flex-wrap items-center gap-2">
             <Link
               href="/dashboard/blog/create"
-              className="bg-[#2563EB] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700"
+              className="bg-brand-blue px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-brand-deep"
             >
               + New Blog
             </Link>
             <Link
               href="/dashboard/event/create"
-              className="bg-[#2563EB] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700"
+              className="bg-brand-blue px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-brand-deep"
             >
               + New Event
             </Link>
             <Link
               href="/dashboard/galeri/create"
-              className="bg-[#2563EB] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700"
+              className="bg-brand-blue px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-brand-deep"
             >
               + Add Photo
             </Link>

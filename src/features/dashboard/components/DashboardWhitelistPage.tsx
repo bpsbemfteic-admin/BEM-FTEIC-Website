@@ -120,7 +120,7 @@ export default function DashboardWhitelistPage() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="h-12 bg-[#2563EB] px-5 text-sm font-medium text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-70"
+              className="h-12 bg-brand-blue px-5 text-sm font-medium text-white transition-colors hover:bg-brand-deep disabled:cursor-not-allowed disabled:opacity-70"
             >
               {isSubmitting ? "Menyimpan..." : "+ Tambah Email"}
             </button>

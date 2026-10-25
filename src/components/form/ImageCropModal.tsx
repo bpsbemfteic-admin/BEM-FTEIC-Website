@@ -303,7 +303,7 @@ export default function ImageCropModal({
                 step="0.01"
                 value={zoom}
                 onChange={(event) => setZoom(Number(event.target.value))}
-                className="mt-4 w-full accent-[#2563EB]"
+                className="mt-4 w-full accent-brand-blue"
               />
 
               <p className="mt-3 text-xs text-black/55">
@@ -323,7 +323,7 @@ export default function ImageCropModal({
                 type="button"
                 onClick={handleConfirm}
                 disabled={isSaving}
-                className="flex-1 bg-[#2563EB] px-4 py-3 text-sm font-medium uppercase text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-70"
+                className="flex-1 bg-brand-blue px-4 py-3 text-sm font-medium uppercase text-white transition-colors hover:bg-brand-deep disabled:cursor-not-allowed disabled:opacity-70"
               >
                 {isSaving ? "Menyimpan..." : "Pakai Gambar"}
               </button>

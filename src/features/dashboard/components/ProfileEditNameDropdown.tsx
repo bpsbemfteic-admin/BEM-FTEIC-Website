@@ -28,7 +28,7 @@ export default function ProfileEditNameDropdown({
         KEMBALI
       </button>
 
-      <h3 className="mb-4 text-center text-3xl font-semibold leading-tight text-[#2B53D3]">
+      <h3 className="mb-4 text-center text-3xl font-semibold leading-tight text-brand-blue">
         Masukkan
         <br />
         Nama Baru

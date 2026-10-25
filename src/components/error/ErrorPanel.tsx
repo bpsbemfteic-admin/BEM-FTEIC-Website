@@ -19,25 +19,25 @@ function ErrorIcon({
     <div className="relative h-36 w-36 bg-[#D9D9D9] shadow-[0_12px_0_0_rgba(0,0,0,0.12)] md:h-40 md:w-40">
       {variant === "notFound" ? (
         <>
-          <div className="absolute left-[25%] top-[18%] h-[34%] w-[16%] bg-[#2450DB]" />
-          <div className="absolute left-[25%] top-[45%] h-[14%] w-[44%] bg-[#2450DB]" />
-          <div className="absolute left-[53%] top-[18%] h-[58%] w-[16%] bg-[#2450DB]" />
+          <div className="absolute left-[25%] top-[18%] h-[34%] w-[16%] bg-brand-blue" />
+          <div className="absolute left-[25%] top-[45%] h-[14%] w-[44%] bg-brand-blue" />
+          <div className="absolute left-[53%] top-[18%] h-[58%] w-[16%] bg-brand-blue" />
         </>
       ) : variant === "serverError" ? (
         <>
-          <div className="absolute left-[25%] top-[22%] h-[18%] w-[18%] bg-[#2450DB]" />
-          <div className="absolute left-[57%] top-[22%] h-[18%] w-[18%] bg-[#2450DB]" />
-          <div className="absolute left-[25%] top-[54%] h-[18%] w-[50%] bg-[#2450DB]" />
+          <div className="absolute left-[25%] top-[22%] h-[18%] w-[18%] bg-brand-blue" />
+          <div className="absolute left-[57%] top-[22%] h-[18%] w-[18%] bg-brand-blue" />
+          <div className="absolute left-[25%] top-[54%] h-[18%] w-[50%] bg-brand-blue" />
         </>
       ) : variant === "serviceUnavailable" ? (
-        <div className="absolute left-[25%] top-[40%] h-[18%] w-[50%] bg-[#2450DB]" />
+        <div className="absolute left-[25%] top-[40%] h-[18%] w-[50%] bg-brand-blue" />
       ) : (
         <>
-          <div className="absolute left-[24%] top-[20%] h-[18%] w-[18%] bg-[#2450DB]" />
-          <div className="absolute left-[41%] top-[37%] h-[18%] w-[18%] bg-[#2450DB]" />
-          <div className="absolute left-[58%] top-[20%] h-[18%] w-[18%] bg-[#2450DB]" />
-          <div className="absolute left-[24%] top-[54%] h-[18%] w-[18%] bg-[#2450DB]" />
-          <div className="absolute left-[58%] top-[54%] h-[18%] w-[18%] bg-[#2450DB]" />
+          <div className="absolute left-[24%] top-[20%] h-[18%] w-[18%] bg-brand-blue" />
+          <div className="absolute left-[41%] top-[37%] h-[18%] w-[18%] bg-brand-blue" />
+          <div className="absolute left-[58%] top-[20%] h-[18%] w-[18%] bg-brand-blue" />
+          <div className="absolute left-[24%] top-[54%] h-[18%] w-[18%] bg-brand-blue" />
+          <div className="absolute left-[58%] top-[54%] h-[18%] w-[18%] bg-brand-blue" />
         </>
       )}
     </div>
@@ -59,7 +59,7 @@ export default function ErrorPanel({
     <div
       className={
         containerClassName ||
-        "fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-[#2450DB] px-6 py-10"
+        "fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-gradient-to-b from-brand-night to-brand-blue px-6 py-10"
       }
     >
       <section
