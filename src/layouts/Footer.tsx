@@ -177,7 +177,7 @@ function FooterDepartmentItem({
 
 export default function Footer() {
   return (
-    <footer className="mt-10 overflow-hidden bg-black text-white">
+    <footer className="mt-10 overflow-hidden bg-brand-night text-white">
       <div className="mx-auto max-w-[1460px] px-8 pb-0 pt-6 md:px-16 md:pb-20">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-5">
           <div className="md:col-span-2">
@@ -188,7 +188,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Hubungi Mas Ilman melalui WhatsApp di +62 852-3658-9132"
-                className="group flex w-fit items-center gap-3 rounded-sm transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FCD704] focus-visible:ring-offset-4 focus-visible:ring-offset-black"
+                className="group flex w-fit items-center gap-3 rounded-sm transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold-bright focus-visible:ring-offset-4 focus-visible:ring-offset-black"
               >
                 <Phone size={18} aria-hidden="true" />
                 <span className="bg-[linear-gradient(currentColor,currentColor)] bg-[length:0_2px] bg-left-bottom bg-no-repeat pb-0.5 transition-[background-size] duration-200 group-hover:bg-[length:100%_2px]">
@@ -198,7 +198,7 @@ export default function Footer() {
               <a
                 href="mailto:bemfteicits2603@gmail.com"
                 aria-label="Kirim email ke bemfteicits2603@gmail.com"
-                className="group flex w-fit items-center gap-3 rounded-sm transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FCD704] focus-visible:ring-offset-4 focus-visible:ring-offset-black"
+                className="group flex w-fit items-center gap-3 rounded-sm transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold-bright focus-visible:ring-offset-4 focus-visible:ring-offset-black"
               >
                 <Mail size={18} aria-hidden="true" />
                 <span className="break-all bg-[linear-gradient(currentColor,currentColor)] bg-[length:0_2px] bg-left-bottom bg-no-repeat pb-0.5 transition-[background-size] duration-200 group-hover:bg-[length:100%_2px]">
@@ -258,7 +258,7 @@ export default function Footer() {
                         rel="noreferrer"
                         aria-label={`Buka ${social.label} BEM FTEIC ITS`}
                         title={social.label}
-                        className="inline-flex h-11 w-11 items-center justify-center rounded-full transition-colors duration-200 hover:bg-white/10 hover:text-[#FCD704] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FCD704]"
+                        className="inline-flex h-11 w-11 items-center justify-center rounded-full transition-colors duration-200 hover:bg-white/10 hover:text-brand-gold-bright focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold-bright"
                       >
                         <SocialIcon size={22} aria-hidden="true" />
                       </a>
@@ -276,7 +276,7 @@ export default function Footer() {
       </div>
 
       <div className="pointer-events-none h-40 pt-0 select-none overflow-hidden">
-        <p className="translate-y-28 -translate-x-1 whitespace-nowrap text-center text-[21.7vw] font-black uppercase leading-none tracking-[-0.045em] text-[#FCD704] md:-translate-y-6">
+        <p className="translate-y-28 -translate-x-1 whitespace-nowrap text-center text-[21.7vw] font-black uppercase leading-none tracking-[-0.045em] text-brand-gold-bright md:-translate-y-6">
           ELECTICS
         </p>
       </div>

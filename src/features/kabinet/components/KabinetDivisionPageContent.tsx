@@ -59,7 +59,7 @@ export default function KabinetDivisionPageContent({
                 <a
                   href="#kabinet-members"
                   onClick={handleMeetTeamClick}
-                  className="inline-flex items-center justify-center rounded-full bg-black px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#FCD704] transition-transform duration-300 hover:-translate-y-0.5 hover:[filter:drop-shadow(0_0_14px_rgba(0,0,0,0.18))] md:px-9 md:py-4"
+                  className="inline-flex items-center justify-center rounded-full bg-black px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-brand-gold-bright transition-transform duration-300 hover:-translate-y-0.5 hover:[filter:drop-shadow(0_0_14px_rgba(0,0,0,0.18))] md:px-9 md:py-4"
                 >
                   Meet The Team
                 </a>
@@ -76,10 +76,10 @@ export default function KabinetDivisionPageContent({
         <div className="relative mx-auto w-full max-w-[70rem] translate-y-3 md:translate-y-4">
           <ScrollReveal delay={40}>
             <div className="mb-10 text-center md:mb-12">
-              <p className="text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-[#FCD704]">
+              <p className="text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-brand-gold-bright">
                 Division Members
               </p>
-              <h2 className="mx-auto mt-3 max-w-2xl text-2xl font-bold leading-relaxed text-[#FCD704] md:text-3xl">
+              <h2 className="mx-auto mt-3 max-w-2xl text-2xl font-bold leading-relaxed text-brand-gold-bright md:text-3xl">
                 The people behind {division.title}.
               </h2>
             </div>
@@ -122,7 +122,7 @@ export default function KabinetDivisionPageContent({
                   </div>
 
                   <div className="flex min-w-0 flex-1 flex-col justify-end bg-black px-3.5 pb-4 pt-3 md:px-4">
-                    <h3 className="min-h-[2.3rem] break-words text-[1.02rem] font-extrabold leading-[1.05] text-[#FCD704] [overflow-wrap:anywhere] md:min-h-[2.8rem] md:text-[1.28rem]">
+                    <h3 className="min-h-[2.3rem] break-words text-[1.02rem] font-extrabold leading-[1.05] text-brand-gold-bright [overflow-wrap:anywhere] md:min-h-[2.8rem] md:text-[1.28rem]">
                       {member.name}
                     </h3>
                     <p className="mt-1.5 break-words text-[0.8rem] font-medium leading-relaxed text-white/82 [overflow-wrap:anywhere] md:text-[0.9rem]">

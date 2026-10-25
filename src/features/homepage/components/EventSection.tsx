@@ -60,11 +60,11 @@ function DepartmentCardFace({
         className={[
           "flex flex-1 flex-col px-5 pb-6 pt-6",
           isProgramFace
-            ? "bg-[#1D4ED8]"
+            ? "bg-brand-blue"
             : [
                 "bg-white",
                 allowHoverAccent
-                  ? "transition-colors duration-300 group-hover:bg-[#1D4ED8]"
+                  ? "transition-colors duration-300 group-hover:bg-brand-blue"
                   : "",
               ].join(" "),
         ].join(" ")}
@@ -75,7 +75,7 @@ function DepartmentCardFace({
             isProgramFace
               ? "text-white/80"
               : [
-                  "text-[#1D4ED8]",
+                  "text-brand-blue",
                   allowHoverAccent
                     ? "transition-colors duration-300 group-hover:text-white/80"
                     : "",
@@ -95,7 +95,7 @@ function DepartmentCardFace({
             isProgramFace
               ? "text-white"
               : [
-                  "text-[#1D4ED8]",
+                  "text-brand-blue",
                   allowHoverAccent
                     ? "transition-colors duration-300 group-hover:text-white"
                     : "",
@@ -141,7 +141,7 @@ function DepartmentCardFace({
                       "text-black",
                       allowHoverAccent
                         ? "group-hover:text-white"
-                        : "hover:text-[#1D4ED8]",
+                        : "hover:text-brand-blue",
                     ].join(" "),
               ].join(" ")}
             >
@@ -160,7 +160,7 @@ function DepartmentCardFace({
                       "text-black transition-colors duration-300",
                       allowHoverAccent
                         ? "group-hover:text-white"
-                        : "hover:text-[#1D4ED8]",
+                        : "hover:text-brand-blue",
                     ].join(" "),
               ].join(" ")}
               aria-label={`Tampilkan tampilan berikutnya untuk ${slide.title}`}
@@ -177,7 +177,7 @@ function DepartmentCardFace({
               "relative mt-auto inline-block w-fit pt-5 text-sm font-medium uppercase after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-200 hover:after:w-full",
               allowHoverAccent
                 ? "text-black transition-colors duration-300 group-hover:text-white"
-                : "text-black transition-colors duration-300 hover:text-[#1D4ED8]",
+                : "text-black transition-colors duration-300 hover:text-brand-blue",
             ].join(" ")}
           >
             {slide.hrefLabel}
@@ -281,7 +281,7 @@ export default function EventSection() {
     <section className="bg-[#F3F3F3] py-20">
       <div className="mx-auto max-w-6xl px-6">
         <ScrollReveal delay={40}>
-          <h3 className="text-center text-4xl font-extrabold uppercase text-[#1D4ED8] md:text-left md:text-5xl">
+          <h3 className="text-center text-4xl font-extrabold uppercase text-brand-blue md:text-left md:text-5xl">
             Departemen
           </h3>
         </ScrollReveal>

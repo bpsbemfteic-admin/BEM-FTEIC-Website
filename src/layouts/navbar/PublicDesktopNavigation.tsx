@@ -16,16 +16,16 @@ export function PublicDesktopNavigation({
   transparent: boolean;
 }) {
   const [open, setOpen] = useState<Menu | null>(null);
-  const text = transparent ? "text-white" : "text-black";
+  const text = "text-white";
   const itemClass = clsxm(
     "inline-flex min-h-11 items-center gap-2 pb-1 focus-visible:ring-2 focus-visible:ring-current",
     transparent
       ? "hover:[filter:drop-shadow(0_0_10px_rgba(255,255,255,0.65))]"
-      : "hover:[filter:drop-shadow(0_0_10px_rgba(0,0,0,0.28))]",
+      : "hover:text-brand-gold-bright",
   );
   const underline = clsxm(
     "relative inline-block after:absolute after:-bottom-[2px] after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-200 hover:after:w-full",
-    transparent ? "after:bg-white" : "after:bg-black",
+    transparent ? "after:bg-white" : "after:bg-brand-gold-bright",
   );
 
   return (
@@ -108,12 +108,12 @@ function DesktopDropdown({
             : "pointer-events-none -translate-y-1 opacity-0",
         )}
       >
-        <div className="border border-black/20 bg-[#FCD704] shadow-lg">
+        <div className="border border-black/20 bg-brand-gold-bright shadow-lg">
           {items.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="flex min-h-11 items-center justify-between border-b border-black/20 px-5 py-3 text-sm text-black transition-colors last:border-b-0 hover:bg-black hover:text-[#FCD704] focus-visible:bg-black focus-visible:text-[#FCD704]"
+              className="flex min-h-11 items-center justify-between border-b border-black/20 px-5 py-3 text-sm text-black transition-colors last:border-b-0 hover:bg-brand-night hover:text-brand-gold-bright focus-visible:bg-brand-night focus-visible:text-brand-gold-bright"
             >
               {item.label}
               <MoveUpRight aria-hidden size={18} />

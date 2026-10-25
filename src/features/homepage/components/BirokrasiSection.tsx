@@ -3,10 +3,10 @@ import ScrollReveal from "@/components/ScrollReveal";
 export default function BirokrasiSection() {
   return (
     <>
-      <section className="flex min-h-[100svh] items-center bg-[#1D4ED8] py-16 text-white">
+      <section className="flex min-h-[100svh] items-center bg-brand-blue py-16 text-white">
         <div className="mx-auto w-full max-w-7xl translate-y-7 px-6">
           <ScrollReveal delay={40}>
-            <h3 className="text-center text-4xl font-extrabold uppercase text-[#FCD704] md:text-5xl">
+            <h3 className="text-center text-4xl font-extrabold uppercase text-brand-gold-bright md:text-5xl">
               Dekan Fakultas Teknologi Elektro dan Informatika Cerdas
             </h3>
           </ScrollReveal>
@@ -33,7 +33,7 @@ export default function BirokrasiSection() {
                     dimaksimalkan lagi terutama kepada pihak pemerintah maupun
                     pihak internasional.
                   </p>
-                  <p className="mt-2 text-xl font-bold text-[#FCD704] md:text-3xl">
+                  <p className="mt-2 text-xl font-bold text-brand-gold-bright md:text-3xl">
                     Prof. Dr. Diana Purwitasari, S.Kom., M.Sc.
                   </p>
                 </div>
@@ -42,7 +42,7 @@ export default function BirokrasiSection() {
           </div>
         </div>
       </section>
-      <div aria-hidden="true" className="h-14 bg-[#1D4ED8]" />
+      <div aria-hidden="true" className="h-14 bg-brand-blue" />
     </>
   );
 }

@@ -139,9 +139,9 @@ export default function EmailConfirmCard() {
   if (isSuccess) {
     return (
       <CardWrapper>
-        <div className="relative bg-[#5172E8] p-6 rounded-2xl mb-6 shadow-md">
+        <div className="relative bg-brand-blue p-6 rounded-2xl mb-6 shadow-md">
           <Mail className="w-16 h-16 text-white" />
-          <div className="absolute top-1 right-1 w-4 h-4 bg-[#EBB85E] rounded-full border-2 border-white"></div>
+          <div className="absolute top-1 right-1 w-4 h-4 bg-brand-gold rounded-full border-2 border-white"></div>
         </div>
 
         <Typography as="h2" className="text-xl font-bold text-black mb-2">
@@ -153,7 +153,7 @@ export default function EmailConfirmCard() {
 
         <button
           onClick={() => router.push("/login")}
-          className="w-full bg-[#EBB85E] hover:brightness-95 text-black font-bold py-3 rounded-[10px] uppercase tracking-wider transition-all"
+          className="w-full bg-brand-gold hover:brightness-95 text-black font-bold py-3 rounded-[10px] uppercase tracking-wider transition-all"
         >
           Go to Login
         </button>
@@ -172,7 +172,7 @@ export default function EmailConfirmCard() {
         </Typography>
         <button
           onClick={() => router.push("/signup")}
-          className="w-full bg-[#EBB85E] text-black font-bold py-3 rounded-[10px] uppercase"
+          className="w-full bg-brand-gold text-black font-bold py-3 rounded-[10px] uppercase"
         >
           Back to Signup
         </button>

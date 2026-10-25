@@ -20,7 +20,7 @@ export default function GaleriGrid({ items }: GaleriGridProps) {
               className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
-          <p className="mt-3 text-xs font-medium text-[#1D4ED8]">
+          <p className="mt-3 text-xs font-medium text-brand-blue">
             {new Date(item.takenAt).toLocaleDateString("en-US")}
           </p>
           <div className="mt-2 flex items-start justify-between gap-2">

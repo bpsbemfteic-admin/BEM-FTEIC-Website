@@ -82,7 +82,7 @@ export default function LocationSection() {
               type="button"
               key={department.name}
               onClick={() => setActiveIndex(index)}
-              className="absolute h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 border-2 border-[#1D4ED8] bg-white transition-all"
+              className="absolute h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 border-2 border-brand-blue bg-white transition-all"
               style={{
                 left: department.marker.x,
                 top: department.marker.y,
@@ -101,7 +101,7 @@ export default function LocationSection() {
               transform: "translate(-50%, -50%)",
             }}
           >
-            <div className="absolute right-5 top-1/2 -translate-y-1/2 whitespace-nowrap bg-[#1D4ED8] px-5 py-2 text-xs font-medium uppercase tracking-wide text-white md:text-sm">
+            <div className="absolute right-5 top-1/2 -translate-y-1/2 whitespace-nowrap bg-brand-blue px-5 py-2 text-xs font-medium uppercase tracking-wide text-white md:text-sm">
               {active.name}
             </div>
           </div>
@@ -121,7 +121,7 @@ export default function LocationSection() {
                     className="h-full w-full object-cover"
                   />
                 </div>
-                <h3 className="mt-8 text-5xl font-extrabold text-[#1D4ED8]">
+                <h3 className="mt-8 text-5xl font-extrabold text-brand-blue">
                   {department.name}
                 </h3>
                 <p className="mt-4 max-w-[95%] text-2xl leading-relaxed text-black/90">
@@ -143,7 +143,7 @@ export default function LocationSection() {
             <button
               type="button"
               onClick={handlePrev}
-              className="text-5xl leading-none text-black transition-colors hover:text-[#1D4ED8]"
+              className="text-5xl leading-none text-black transition-colors hover:text-brand-blue"
               aria-label="Previous department"
             >
               ‹
@@ -151,7 +151,7 @@ export default function LocationSection() {
             <button
               type="button"
               onClick={handleNext}
-              className="text-5xl leading-none text-black transition-colors hover:text-[#1D4ED8]"
+              className="text-5xl leading-none text-black transition-colors hover:text-brand-blue"
               aria-label="Next department"
             >
               ›

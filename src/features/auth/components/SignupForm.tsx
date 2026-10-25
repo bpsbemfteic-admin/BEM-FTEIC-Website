@@ -45,7 +45,7 @@ export default function SignupForm() {
         <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-1">
           SIGN UP
         </p>
-        <h1 className="text-2xl font-extrabold text-[#5172E8] tracking-tight">
+        <h1 className="text-2xl font-extrabold text-brand-blue tracking-tight">
           Buat akun baru
         </h1>
       </header>
@@ -120,7 +120,7 @@ export default function SignupForm() {
           <button
             type="submit"
             disabled={isPending}
-            className="w-full bg-[#EBB85E] hover:brightness-95 text-black font-bold py-3 rounded-[10px] uppercase tracking-wider transition-all mt-4"
+            className="w-full bg-brand-gold hover:brightness-95 text-black font-bold py-3 rounded-[10px] uppercase tracking-wider transition-all mt-4"
           >
             {isPending ? "Creating account..." : "SIGNUP"}
           </button>
@@ -128,7 +128,7 @@ export default function SignupForm() {
           <div className="mt-6 text-center">
             <Link
               href="/login"
-              className="text-[#4A70E2] text-sm font-medium hover:underline"
+              className="text-link-blue text-sm font-medium hover:underline"
             >
               Sudah memiliki akun?
             </Link>

@@ -42,7 +42,7 @@ export default function ProfileDropdown({
             className="h-14 w-14 object-cover"
           />
         ) : (
-          <div className="flex h-14 w-14 items-center justify-center bg-gradient-to-b from-[#4A70E2] to-[#C4CDD9]">
+          <div className="flex h-14 w-14 items-center justify-center bg-gradient-to-b from-brand-night to-brand-blue">
             <div className="h-7 w-7 rounded-full bg-[#AFC0E7]" />
           </div>
         )}

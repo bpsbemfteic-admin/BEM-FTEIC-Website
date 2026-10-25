@@ -22,12 +22,13 @@ export default function Navbar() {
   return (
     <header
       className="fixed inset-x-0 top-0 z-50 transition-colors duration-300 motion-reduce:transition-none"
-      style={{ backgroundColor: transparent ? "transparent" : "#FCD704" }}
+      // Navbar solid memakai biru malam dari logo BEM FTEIC; teks putih di kedua keadaan.
+      style={{ backgroundColor: transparent ? "transparent" : "#0E2F3B" }}
     >
       <div className="w-full px-4 py-3 md:px-8">
         <div className="mx-auto flex w-full max-w-[1720px] items-center justify-between">
-          <NavbarBrand transparent={transparent} />
-          <PublicMobileNavigation transparent={transparent} />
+          <NavbarBrand />
+          <PublicMobileNavigation />
           <PublicDesktopNavigation transparent={transparent} />
         </div>
       </div>

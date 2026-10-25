@@ -32,8 +32,8 @@ export default function SwipeSideHint({
             className={[
               "inline-flex h-10 w-10 items-center justify-center rounded-full",
               isLight
-                ? "bg-[#1D4ED8]/10 text-[#1D4ED8]"
-                : "bg-white/10 text-[#FCD704]",
+                ? "bg-brand-blue/10 text-brand-blue"
+                : "bg-white/10 text-brand-gold-bright",
             ].join(" ")}
           >
             <svg
@@ -60,7 +60,7 @@ export default function SwipeSideHint({
               aria-hidden="true"
               className={[
                 "inline-flex items-center gap-1",
-                isLight ? "text-[#1D4ED8]" : "text-[#FCD704]",
+                isLight ? "text-brand-blue" : "text-brand-gold-bright",
               ].join(" ")}
             >
               <span className="animate-pulse">{">"}</span>

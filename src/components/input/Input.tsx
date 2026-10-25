@@ -53,7 +53,7 @@ const Input = ({
           id={id}
           type={type}
           className={clsxm(
-            "w-full bg-[#D9D9D9] border-none rounded-lg p-3 text-sm text-black placeholder:text-gray-500 outline-none transition-all focus:ring-2 focus:ring-[#5172E8]/50",
+            "w-full bg-[#D9D9D9] border-none rounded-lg p-3 text-sm text-black placeholder:text-gray-500 outline-none transition-all focus:ring-2 focus:ring-brand-blue/50",
             rightIcon ? "pr-10" : undefined,
             error && "ring-2 ring-red-500",
             className,

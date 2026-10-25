@@ -46,7 +46,7 @@ export default function LoginForm() {
         <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-1">
           Selamat Datang
         </p>
-        <h1 className="text-2xl font-extrabold text-[#5172E8] tracking-tight">
+        <h1 className="text-2xl font-extrabold text-brand-blue tracking-tight">
           ELECTICS
         </h1>
       </header>
@@ -106,7 +106,7 @@ export default function LoginForm() {
             type="submit"
             disabled={isPending}
             aria-busy={isPending}
-            className="mt-4 min-h-11 w-full rounded-[10px] bg-[#EBB85E] py-3 font-bold uppercase tracking-wider text-black transition-all hover:brightness-95 disabled:cursor-not-allowed disabled:opacity-60"
+            className="mt-4 min-h-11 w-full rounded-[10px] bg-brand-gold py-3 font-bold uppercase tracking-wider text-black transition-all hover:brightness-95 disabled:cursor-not-allowed disabled:opacity-60"
           >
             {isPending ? "Logging in..." : "LOGIN"}
           </button>
@@ -114,7 +114,7 @@ export default function LoginForm() {
           <div className="mt-6 text-center">
             <Link
               href="/signup"
-              className="text-[#4A70E2] text-sm font-medium hover:underline"
+              className="text-link-blue text-sm font-medium hover:underline"
             >
               Belum memiliki akun?
             </Link>

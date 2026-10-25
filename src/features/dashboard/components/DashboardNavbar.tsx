@@ -16,7 +16,7 @@ export default function DashboardNavbar() {
   const photoInput = useRef<HTMLInputElement>(null);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-[#FCD704]">
+    <header className="fixed inset-x-0 top-0 z-50 bg-brand-gold-bright">
       <input
         ref={photoInput}
         type="file"

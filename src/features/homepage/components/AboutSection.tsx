@@ -20,7 +20,7 @@ const marsLyrics = [
 
 export default function AboutSection() {
   return (
-    <section className="bg-black pb-24 pt-6 md:pt-16">
+    <section className="bg-brand-night pb-24 pt-6 md:pt-16">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 md:grid-cols-2 md:items-center">
         <ScrollReveal delay={40}>
           <div className="group relative h-[280px] w-full overflow-hidden md:h-[360px]">
@@ -37,7 +37,7 @@ export default function AboutSection() {
           <div className="flex h-[280px] flex-col text-white md:h-[360px]">
             <h2 className="mb-8 text-center text-4xl font-extrabold md:text-5xl">
               <span>Mars </span>
-              <span className="text-[#FCD704]">FTEIC</span>
+              <span className="text-brand-gold-bright">FTEIC</span>
               <span> ITS</span>
             </h2>
             <div className="scrollbar-gold flex-1 overflow-y-scroll pr-3">

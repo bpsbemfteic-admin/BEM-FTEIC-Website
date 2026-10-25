@@ -71,9 +71,9 @@ export default function HeroSection() {
         sizes="100vw"
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-black/35" />
-      <div className="absolute inset-x-0 top-0 h-[14%] bg-gradient-to-b from-black via-black/85 to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 h-[14%] bg-gradient-to-t from-black via-black/85 to-transparent" />
+      <div className="absolute inset-0 bg-brand-night/45" />
+      <div className="absolute inset-x-0 top-0 h-[14%] bg-gradient-to-b from-brand-night via-brand-night/60 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-[14%] bg-gradient-to-t from-brand-night via-brand-night/60 to-transparent" />
       <div className="relative flex min-h-[100svh] items-center justify-center px-6 text-center">
         <ScrollReveal delay={60}>
           <div

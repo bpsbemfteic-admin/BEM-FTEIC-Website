@@ -26,7 +26,7 @@ export default function NewsCard({ blog, variant = "small" }: NewsCardProps) {
       href={`/blog/${blog.id}`}
       className={clsxm(
         "group flex h-full flex-col overflow-hidden border border-brand-blue/35 bg-white",
-        "shadow-[0_3px_0_0_#5172E8] transition-colors duration-300 hover:bg-[#FCEABF]",
+        "shadow-[0_3px_0_0_#246C84] transition-colors duration-300 hover:bg-[#FCEABF]",
       )}
     >
       <div className="relative aspect-[16/9] w-full overflow-hidden">

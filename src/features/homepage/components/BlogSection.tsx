@@ -12,11 +12,11 @@ export default function BlogSection() {
   const rest = items.slice(1, 5);
 
   return (
-    <section className="bg-[#1D4ED8] pb-36 pt-20 text-white">
+    <section className="bg-brand-blue pb-36 pt-20 text-white">
       <div className="mx-auto max-w-6xl translate-y-10 px-6">
         <ScrollReveal delay={40}>
           <div className="flex items-center justify-between">
-            <h3 className="text-4xl font-extrabold uppercase text-[#FCD704] md:text-5xl">
+            <h3 className="text-4xl font-extrabold uppercase text-brand-gold-bright md:text-5xl">
               BLOG
             </h3>
             <Link
@@ -70,7 +70,7 @@ export default function BlogSection() {
                     />
                   </div>
                 </Link>
-                <p className="mt-4 text-sm font-semibold uppercase text-[#FCD704]">
+                <p className="mt-4 text-sm font-semibold uppercase text-brand-gold-bright">
                   {highlight.category}
                 </p>
                 <h4 className="mt-2 line-clamp-2 break-words text-2xl font-bold leading-tight [overflow-wrap:anywhere] md:text-3xl">
@@ -94,7 +94,7 @@ export default function BlogSection() {
                       </div>
                     </Link>
                     <div className="min-w-0">
-                      <p className="text-xs font-semibold uppercase text-[#FCD704]">
+                      <p className="text-xs font-semibold uppercase text-brand-gold-bright">
                         {blog.category}
                       </p>
                       <h5 className="mt-1 line-clamp-2 break-words text-lg font-bold leading-tight [overflow-wrap:anywhere] md:text-xl">

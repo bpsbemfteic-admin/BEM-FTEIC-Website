@@ -8,11 +8,7 @@ import { EVENT_NAV_ITEMS } from "@/features/event/department";
 import { KABINET_NAV_ITEMS } from "@/features/kabinet/navigation";
 import clsxm from "@/lib/clsxm";
 
-export function PublicMobileNavigation({
-  transparent,
-}: {
-  transparent: boolean;
-}) {
+export function PublicMobileNavigation() {
   const [open, setOpen] = useState(false);
   const [section, setSection] = useState<"event" | "kabinet" | null>(null);
   const close = () => {
@@ -29,7 +25,7 @@ export function PublicMobileNavigation({
         aria-controls="public-mobile-navigation"
         className={clsxm(
           "inline-flex min-h-11 items-center gap-1 px-2 text-sm font-semibold uppercase focus-visible:ring-2 focus-visible:ring-current",
-          transparent ? "text-white" : "text-black",
+          "text-white",
         )}
       >
         Menu
@@ -46,7 +42,7 @@ export function PublicMobileNavigation({
         aria-label="Navigasi utama mobile"
         aria-hidden={!open}
         className={clsxm(
-          "absolute right-0 top-full z-50 mt-2 w-64 origin-top-right border border-black/20 bg-[#FCD704] text-black shadow-xl transition-all duration-200",
+          "absolute right-0 top-full z-50 mt-2 w-64 origin-top-right border border-black/20 bg-brand-gold-bright text-black shadow-xl transition-all duration-200",
           open
             ? "translate-y-0 scale-100 opacity-100"
             : "pointer-events-none -translate-y-2 scale-95 opacity-0",
@@ -94,7 +90,7 @@ function MobileLink({
     <Link
       href={href}
       onClick={onClick}
-      className="flex min-h-11 items-center border-b border-black/20 px-4 py-3 text-sm font-semibold uppercase focus-visible:bg-black focus-visible:text-[#FCD704]"
+      className="flex min-h-11 items-center border-b border-black/20 px-4 py-3 text-sm font-semibold uppercase focus-visible:bg-brand-night focus-visible:text-brand-gold-bright"
     >
       {children}
     </Link>
@@ -138,7 +134,7 @@ function MobileSection({
               key={item.href}
               href={item.href}
               onClick={onNavigate}
-              className="flex min-h-11 items-center border-b border-black/20 px-4 py-2 text-xs uppercase last:border-b-0 hover:bg-black hover:text-[#FCD704] focus-visible:bg-black focus-visible:text-[#FCD704]"
+              className="flex min-h-11 items-center border-b border-black/20 px-4 py-2 text-xs uppercase last:border-b-0 hover:bg-brand-night hover:text-brand-gold-bright focus-visible:bg-brand-night focus-visible:text-brand-gold-bright"
             >
               {item.label}
             </Link>
