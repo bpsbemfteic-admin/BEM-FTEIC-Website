@@ -16,6 +16,7 @@ const config: Config = {
         "brand-deep": "#17495A",
         "brand-night": "#0E2F3B",
         "brand-light-blue": "#E7F1F4",
+        "brand-cream": "#FFF6DD",
         "brand-gold": "#E4B43C",
         "brand-gold-bright": "#FCCC3C",
         "brand-magenta": "#B43C6C",

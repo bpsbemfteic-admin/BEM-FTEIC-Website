@@ -3,10 +3,10 @@ import ScrollReveal from "@/components/ScrollReveal";
 export default function BirokrasiSection() {
   return (
     <>
-      <section className="flex min-h-[100svh] items-center bg-gradient-to-b from-brand-blue to-brand-deep py-16 text-white">
+      <section className="flex min-h-[100svh] items-center bg-gradient-to-b from-brand-gold-bright to-brand-gold py-16 text-brand-night">
         <div className="mx-auto w-full max-w-7xl translate-y-7 px-6">
           <ScrollReveal delay={40}>
-            <h3 className="text-center text-4xl font-extrabold uppercase text-brand-gold-bright md:text-5xl">
+            <h3 className="text-center text-4xl font-extrabold uppercase text-brand-night md:text-5xl">
               Dekan Fakultas Teknologi Elektro dan Informatika Cerdas
             </h3>
           </ScrollReveal>
@@ -23,7 +23,7 @@ export default function BirokrasiSection() {
                 </div>
 
                 <div className="w-full max-w-none px-3 text-left md:max-w-2xl md:px-0">
-                  <p className="mt-4 text-lg leading-relaxed text-white/95 md:mt-3 md:text-2xl">
+                  <p className="mt-4 text-lg leading-relaxed text-brand-night/95 md:mt-3 md:text-2xl">
                     Proses transformasi digital di berbagai lini menjadi hal
                     yang harus dijalankan dalam menghadapi revolusi industri
                     4.0. FT-EIC diharapkan kolaborasi dan sinergi yang terjalin
@@ -33,7 +33,7 @@ export default function BirokrasiSection() {
                     dimaksimalkan lagi terutama kepada pihak pemerintah maupun
                     pihak internasional.
                   </p>
-                  <p className="mt-2 text-xl font-bold text-brand-gold-bright md:text-3xl">
+                  <p className="mt-2 text-xl font-bold text-brand-deep md:text-3xl">
                     Prof. Dr. Diana Purwitasari, S.Kom., M.Sc.
                   </p>
                 </div>
@@ -42,7 +42,7 @@ export default function BirokrasiSection() {
           </div>
         </div>
       </section>
-      <div aria-hidden="true" className="h-14 bg-brand-deep" />
+      <div aria-hidden="true" className="h-14 bg-brand-gold" />
     </>
   );
 }

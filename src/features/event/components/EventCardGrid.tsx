@@ -8,6 +8,14 @@ interface EventCardGridProps {
 }
 
 export default function EventCardGrid({ items }: EventCardGridProps) {
+  if (items.length === 0) {
+    return (
+      <p className="mt-8 border border-dashed border-black/15 bg-white px-6 py-10 text-center text-black/60">
+        Belum ada event untuk departemen ini.
+      </p>
+    );
+  }
+
   return (
     <div className="mt-8 grid grid-cols-1 gap-x-10 gap-y-5 md:grid-cols-2">
       {items.map((item) => {

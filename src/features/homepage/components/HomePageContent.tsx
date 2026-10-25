@@ -16,15 +16,15 @@ export default function HomePageContent() {
       <AboutSection />
       <SectionFade className="from-brand-deep to-[#F3F3F3]" />
       <VisiMisiSection />
-      <SectionFade className="from-brand-light-blue to-brand-blue" />
+      <SectionFade className="from-brand-cream to-brand-gold-bright" />
       <BirokrasiSection />
-      <SectionFade className="from-brand-deep to-[#F3F3F3]" />
+      <SectionFade className="from-brand-gold to-[#F3F3F3]" />
       <EventSection />
-      <SectionFade className="from-brand-light-blue to-brand-blue" />
+      <SectionFade className="from-brand-cream to-brand-gold-bright" />
       <BlogSection />
-      <SectionFade className="from-brand-deep to-[#F3F3F3]" />
+      <SectionFade className="from-brand-gold to-[#F3F3F3]" />
       <LocationSection />
-      <SectionFade className="from-brand-light-blue to-brand-night" />
+      <SectionFade className="from-brand-cream to-brand-night" />
     </main>
   );
 }

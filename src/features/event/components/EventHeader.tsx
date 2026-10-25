@@ -14,9 +14,9 @@ export default function EventHeader({ department }: EventHeaderProps) {
         <Image
           src={department.logoSrc}
           alt={`Logo ${department.organizerLabel}`}
-          width={48}
-          height={48}
-          className="h-12 w-12 rounded-full object-cover"
+          width={56}
+          height={56}
+          className="h-14 w-14 rounded-lg border border-black/10 bg-white object-contain p-1"
         />
         <p className="text-3xl text-black">{department.organizerLabel}</p>
       </div>

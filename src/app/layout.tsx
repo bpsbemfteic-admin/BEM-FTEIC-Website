@@ -1,7 +1,7 @@
 // Root layout
 
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import type { ReactNode } from "react";
 
 import Providers from "@/app/providers";
@@ -10,7 +10,7 @@ import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -63,7 +63,7 @@ const organizationJsonLd = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="id">
-      <body className={inter.className}>
+      <body className={jakarta.className}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
