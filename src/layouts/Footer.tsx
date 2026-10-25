@@ -20,7 +20,7 @@ const pages = [
   { label: "Event", href: "/event/fteic" },
   { label: "Kabinet", href: "/#kabinet" },
   { label: "Galeri", href: "/galeri" },
-  { label: "BPS", href: BPS_PATH },
+  { label: "Kinerja", href: BPS_PATH },
 ];
 
 const socialLinks = [

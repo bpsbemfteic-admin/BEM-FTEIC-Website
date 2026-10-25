@@ -74,7 +74,7 @@ export function PublicMobileNavigation() {
           Galeri
         </MobileLink>
         <MobileLink href={BPS_PATH} onClick={close}>
-          BPS
+          Kinerja
         </MobileLink>
       </nav>
     </div>

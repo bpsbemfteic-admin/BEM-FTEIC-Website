@@ -29,7 +29,7 @@ export const SITE_URL = resolveSiteUrl(
   process.env.SITE_URL ?? process.env.NEXT_PUBLIC_SITE_URL,
 );
 
-// Portal BPS adalah aplikasi terpisah (zona lain) yang diteruskan lewat rewrites di next.config.js.
+// Halaman Kinerja (milik BPS: apresiasi, penilaian, OKR & Project Lens) adalah aplikasi terpisah (zona lain) yang diteruskan lewat rewrites di next.config.js.
 // Tautan ke sana memakai <a> biasa, bukan <Link>, karena berpindah zona butuh muat ulang halaman.
 export const BPS_PATH = "/bps";
 

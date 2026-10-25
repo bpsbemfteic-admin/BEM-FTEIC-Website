@@ -62,7 +62,7 @@ export function PublicDesktopNavigation({
         <span className={underline}>GALERI</span>
       </Link>
       <a href={BPS_PATH} className={itemClass}>
-        <span className={underline}>BPS</span>
+        <span className={underline}>KINERJA</span>
       </a>
     </nav>
   );
