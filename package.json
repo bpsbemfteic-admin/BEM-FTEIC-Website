@@ -22,11 +22,11 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.111.0",
     "@tanstack/react-query": "^5.101.4",
-    "axios": "^1.19.0",
+    "axios": "^1.20.0",
     "clsx": "^2.1.0",
-    "cssnano": "^8.0.2",
+    "cssnano": "^9.9.0",
     "lucide-react": "^0.574.0",
-    "next": "16.2.11",
+    "next": "16.4.3",
     "next-sitemap": "^4.2.3",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
@@ -59,9 +59,11 @@
   "pnpm": {
     "overrides": {
       "@babel/runtime": "7.29.7",
+      "follow-redirects": "1.16.1",
       "nanoid@<3.3.18": "3.3.18",
       "postcss": "8.5.25",
-      "sharp": "0.35.0"
+      "sharp": "0.35.5",
+      "source-map-js": "1.2.2"
     }
   }
 }
