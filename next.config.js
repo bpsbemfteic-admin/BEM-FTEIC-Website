@@ -47,6 +47,18 @@ const nextConfig = {
       },
     ];
   },
+  async redirects() {
+    // Alamat pendek untuk dibagikan, menuju halaman milik Portal BPS (/bps).
+    return [
+      { source: "/jadwal", destination: "/bps/jadwal", permanent: false },
+      { source: "/kinerja", destination: "/bps", permanent: false },
+      {
+        source: "/keor/:path*",
+        destination: "/bps/keor/:path*",
+        permanent: false,
+      },
+    ];
+  },
   async rewrites() {
     return [
       { source: "/bps", destination: `${bpsZoneUrl}/bps` },
